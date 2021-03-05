@@ -9,13 +9,29 @@
   </head>
 
   <body>
-    <input id="myInput" type ="text" placeholder="search" onkeyup = "mySearchFunction()">
-    <div id="root">
+
+    <div id="searchContainer">
+      <select id="showSelection">
+        <option> choose show</option>
+      </select>
+      <select id="episodeSelection">
+        <option >
+          allEpisodes
+        </option>
+
+      </select>
+      <div id="searchLive">
+        <input type = "text" id="keyInput" onkeyup="searchLive()" placeholder="searching">
+        <p id="result"></p>
+      </div>
 
     </div>
+    <div id="root"></div>
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
+    <!-- load provided function called getAllShows() which returns All shows -->
+      <script src="shows.js"></script>
 
     <!-- Loads YOUR javascript code -->
     <script src="script.js"></script>
