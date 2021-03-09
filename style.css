@@ -1,5 +1,5 @@
-#root {
-  color: red;
+/* #root {
+  color: yellow;
   color:black;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -64,7 +64,7 @@
 
 #summary {
   color: black;
-}
+} */
 
 .hidden{
   display: none;
